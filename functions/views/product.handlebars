@@ -1,0 +1,30 @@
+
+
+<div class="ui list">
+    <a class="ui teal tag label" href="/">Back</a>
+    {{#each products}}
+    <div style="justify-content: space-between; width: 100%;padding: 2ch; margin: 1ch;">
+        <div>
+        <span>{{rank}}</span>
+        <img src={{image}} alt={{title}} />
+        </div>
+        <div>
+        {{!-- <a class="item" href="{{article}}">{{title}}</a> --}}
+        <p>
+            {{title}}
+            </p>
+            <p>
+            {{feedback}}
+            </p>
+            <p>
+            {{totalfeedback}} feedback so far
+            </p>
+            <p>
+            {{price}}
+            </p>
+        </div>
+    </div>
+        
+    {{/each}}
+</div>
+
